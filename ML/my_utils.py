@@ -38,7 +38,7 @@ def print_score(y_test, y_pred, average="binary"):
     print("recall :", rec)
 
     
-def plpt_confusion_matrix(y_test, y_pred):
+def plot_confusion_matrix(y_test, y_pred):
     cfm = confusion_matrix(y_test, y_pred)
     sns.heatmap(cfm, annot=True, cbar=False)
     plt.xlabel("Predicted Class")
